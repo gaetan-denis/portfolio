@@ -39,7 +39,7 @@ body.dark-theme .skill h3 {
 
 
 body.dark-theme .header-menu-mobile {
-    background: #000; /* Couleur de fond en mode sombre */
+    background: #1e1e1e; /* Couleur de fond en mode sombre */
     color: #fff; /* Couleur de l'icône en mode sombre */
     transition: background-color 0.3s ease, color 0.3s ease; /* Ajout d'une transition pour une transition douce */
 }
@@ -566,3 +566,5 @@ body.dark-theme .header-menu li a {
 body.dark-theme .header-menu li a:hover {
     background-color: #333333; /* Couleur de fond au survol pour un contraste accru */
 }
+
+
