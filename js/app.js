@@ -128,3 +128,32 @@ document.querySelectorAll('.particles-js').forEach((element, index) => {
     });
 });
 
+//Dark Thème
+
+// Basculer entre les thèmes clair et sombre
+const toggleTheme = () => {
+    const body = document.body;
+    body.classList.toggle('dark-theme');
+
+    // Changer l'icône du bouton de bascule
+    const themeToggleBtnIcon = document.querySelector('.theme-toggle-btn span');
+    if (body.classList.contains('dark-theme')) {
+        themeToggleBtnIcon.innerHTML = 'dark_mode';
+        themeToggleBtn.classList.add('dark-mode');
+    } else {
+        themeToggleBtnIcon.innerHTML = 'light_mode';
+        themeToggleBtn.classList.remove('dark-mode');
+    }
+
+    // Changer la couleur des éléments spécifiques au thème
+    document.querySelectorAll('header, .header-menu li a, .slider, .realisation h3, .skill, .contact, .contact a').forEach(el => {
+        el.classList.toggle('dark-theme');
+    });
+}
+
+// Ajouter un bouton de bascule dans le header
+const themeToggleBtn = document.createElement('button');
+themeToggleBtn.classList.add('theme-toggle-btn');
+themeToggleBtn.innerHTML = '<span class="material-icons">light_mode</span>';
+themeToggleBtn.onclick = toggleTheme;
+document.querySelector('header .flex').appendChild(themeToggleBtn);
