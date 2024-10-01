@@ -192,7 +192,7 @@ p {
     transform: translate(-50%, -50%);
     text-decoration: none;
     color: #FFF;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: max-content;
     opacity: 0;
     transition: opacity 2s ease, color 0.3s ease; /* Transition pour l'opacité et la couleur du texte des réalisations */
